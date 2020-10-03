@@ -73,11 +73,16 @@ fieldset div select{
     outline: none;
     background: rgb(64, 68, 75);
 }
-
 fieldset div option{
     color: #43b5b5;
 }
 
+fieldset div select:focus{
+    border: 1px solid  #4375B5;
+}
+fieldset div option:focus{
+    border: 1px solid  #4375B5;
+}
 fieldset div input:focus{
     border: 1px solid  #4375B5;
 }
