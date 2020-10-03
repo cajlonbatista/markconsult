@@ -73,6 +73,12 @@ fieldset div select{
     outline: none;
     background: rgb(64, 68, 75);
 }
+fieldset aticle input:-webkit-autofill, fieldset div input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px#36393F inset;
+}
+fieldset aticle input:-webkit-autofill, fieldset div input:-webkit-autofill {
+    -webkit-text-fill-color: #4375B5 !important;
+}
 fieldset div option{
     color: #43b5b5;
 }
