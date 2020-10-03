@@ -1,3 +1,5 @@
 # A Simple Form in HTML 📘💻
 
- Construa um formulário HTML que implemente a coleta de dados de um usuário em um determinado contexto (ex.: marcação de uma consulta médica).
+## Programming Activity Resolution 3
+
+Build an HTML form that implements the collection of a user's data in a given context (eg, making an appointment for a medical appointment).
