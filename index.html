@@ -4,25 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form HTML</title>
+    <link rel="shortcut icon" href="https://www.flaticon.com/svg/static/icons/svg/684/684279.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Hyper Clinic</title>
 </head>
 
 <body>
-    <form action="" method="get">
-        <fieldset>
+    <form action="" method="get" autocomplete="off">
+        <fieldset autocomplete="off">
             <legend>Personal data</legend>
             <div>
                 <label for="name">Name</label>
                 <input type="text" name="name">
             </div>
-            <div>
-                <label for="age">Age</label>
-                <input type="number" name="age">
-            </div>
-            <div>
-                <label for="sex">Sex</label>
-                <input type="sex">
-            </div>
+            <article>
+                <div>
+                    <label for="age">Age</label>
+                    <input type="number" min="0" name="age">
+                </div>
+                <div>
+                    <label for="sex">Sex</label>
+                    <input type="sex">
+                </div>
+            </article>
         </fieldset>
         <fieldset>
             <legend>Contact details</legend>
@@ -30,35 +34,41 @@
                 <label for="street">Street</label>
                 <input type="text" name="street">
             </div>
-            <div>
-                <label for="number">Number</label>
-                <input type="number" name="number">
-            </div>
-            <div>
-                <label for="telephone">Telephone</label>
-                <input type="tel" name="telephone">
-            </div>
+            <article>
+                <div>
+                    <label for="number">Number</label>
+                    <input type="number" min="0" name="number">
+                </div>
+                <div>
+                    <label for="telephone">Telephone</label>
+                    <input type="tel" name="telephone">
+                </div>
+            </article>
         </fieldset>
         <fieldset>
             <legend>Consultation Data</legend>
             <div>
                 <label for="schedule">Schedule</label>
                 <select name="schedule">
-                    <option>8:00 às 9:30</option>
-                    <option>10:00 às 11:30</option>
-                    <option>13:00 às 14:30</option>
-                    <option>15:00 às 16:30</option>
-                    <option>16:00 às 17:30</option>
+                    <option>08:00 to 09:30</option>
+                    <option>10:00 to 11:30</option>
+                    <option>13:00 to 14:30</option>
+                    <option>15:00 to 16:30</option>
+                    <option>16:00 to 17:30</option>
                 </select>
             </div>
             <div>
-                <label for="doctor"></label>
-                <input type="text" name="doctor">
+                <label for="doctor">Doctor</label>
+                <select name="doctor">
+                    <option>Doutor(a) Luca Ribeira Lima</option>
+                    <option>Doutor(a) Pedro Sousa Marimo</option>
+                    <option>Doutor(a) João Luís de Rocha </option>
+                </select>
             </div>
         </fieldset>
-        <div>
-            <button type="submit">Mark</button>
-            <button type="reset">Reset</button>
+        <div class="submit-button-group">
+            <button class="submit-button-1" type="submit">Mark</button>
+            <button class="submit-button-2" type="reset">Reset</button>
         </div>
     </form>
 </body>

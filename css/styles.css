@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Noto+Sans&family=Exo&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #2F3136;
+}
+
+h1 {
+    font-family: Exo, sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+form{
+    width: 100%;
+    max-width: 900px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+fieldset{
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: 1px rgb(179, 182, 185) solid;
+    border-radius: 5px;
+}
+
+fieldset legend{
+    font-family: Noto Sans, sans-serif;
+    padding: 0px 10px;
+    font-size: 19px;
+    color: #43b5b5;
+}
+
+fieldset div{
+    padding: 5px;
+}
+
+fieldset div label{
+    font-family: Exo, sans-serif;
+    color: rgb(179, 182, 185);
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+fieldset div input{
+    width: 70%;
+    padding: 10px;
+    color: rgb(179, 182, 185);
+    transition: all 0.5s ease 0s;
+    font-family: Noto Sans, sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid rgb(24, 25, 28);
+    outline: none;
+    background: rgb(64, 68, 75);
+    height: 40px;
+}
+
+fieldset div select{
+    width: 70%;
+    height: 40px;
+    color: rgb(179, 182, 185);
+    transition: all 0.5s ease 0s;
+    font-family: Noto Sans, sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid rgb(24, 25, 28);
+    outline: none;
+    background: rgb(64, 68, 75);
+}
+
+fieldset div option{
+    color: #43b5b5;
+}
+
+fieldset div input:focus{
+    border: 1px solid  #4375B5;
+}
+
+fieldset article{
+    display: flex;
+}
+
+.submit-button-group{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.submit-button-group .submit-button-1{
+    width: 40%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid;
+    border: 1px solid rgb(24, 25, 28);
+    background-color: #43b5b5;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-family: Noto Sans, sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    
+}
+.submit-button-group .submit-button-1:hover{
+    background-color: #43b5b5bb;
+}
+.submit-button-1:focus{
+    border: 1px solid white;
+}
+.submit-button-group .submit-button-2{
+    width: 40%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid;
+    border: 1px solid rgb(24, 25, 28);
+    background-color: rgb(64, 68, 75);
+    color: rgb(179, 182, 185);
+    cursor: pointer;
+    transition: all 0.5s;
+    font-family: Noto Sans, sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    
+}
+.submit-button-group .submit-button-2:hover{
+    background-color: rgba(64, 68, 75, 0.575);
+}
+.submit-button-2:focus{
+    border: 1px solid white;
+}
+
+@media(max-width: 425px){
+    form{
+        padding: 0;
+    }
+    fieldset{
+        padding: 5px;
+        margin: 5px;
+        border: 0px solid;
+    }
+    fieldset legend{
+        text-align: center;
+    }
+    fieldset div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    fieldset div label{
+        margin-bottom: 5px;
+    }
+    fieldset div input, fieldset div select {
+        width: 100%;
+    }
+    article, article div{
+        display: flex;
+        flex-direction: column;
+    }
+    article div input{
+        width: 100%;
+    }
+    .submit-button-group{
+        display: flex;
+        flex-direction: column;
+        border-top: 2px solid #43b5b5;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .submit-button-group .submit-button-1 , .submit-button-group .submit-button-2{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+}
